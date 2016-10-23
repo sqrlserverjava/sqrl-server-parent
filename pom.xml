@@ -161,4 +161,9 @@
 		</repository>
 	</distributionManagement>
 
+	<scm>
+		<connection>scm:git:git@github.com:sqrlserverjava/sqrl-server-parent.git</connection>
+		<developerConnection>scm:git:git@github.com:sqrlserverjava/sqrl-server-parent.git</developerConnection>
+		<url>git@github.com:sqrlserverjava/sqrl-server-parent.git</url>
+	</scm>
 </project>
