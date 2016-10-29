@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.dbadia.sqrl</groupId>
+	<groupId>com.github.sqrlserverjava</groupId>
 	<artifactId>sqrl-server-parent</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -22,7 +22,7 @@
 			<email>dbadiaoss@gmail.com</email>
 		</developer>
 	</developers>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -113,18 +113,19 @@
 			<version>2.6.3</version>
 			<scope>test</scope>
 		</dependency>
-		
-		
+
+
 		<!-- PROVIDED -->
 		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>6.0</version>
+			<!-- full j2ee implementation -->
+			<groupId>org.glassfish.main.extras</groupId>
+			<artifactId>glassfish-embedded-all</artifactId>
+			<version>3.1.2.2</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -136,7 +137,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-				<plugin>
+			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
@@ -146,7 +147,7 @@
 					</classpathDependencyExcludes>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 
