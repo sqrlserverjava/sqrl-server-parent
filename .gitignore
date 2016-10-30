@@ -7,3 +7,4 @@ settings.gradle
 /bin/
 target
 release.properties
+pom.xml.releaseBackup
