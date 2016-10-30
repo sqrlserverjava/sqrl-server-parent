@@ -5,3 +5,5 @@ gradlew.bat
 build.gradle
 settings.gradle
 /bin/
+target
+release.properties
