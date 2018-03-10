@@ -8,3 +8,4 @@ settings.gradle
 target
 release.properties
 pom.xml.releaseBackup
+.project
